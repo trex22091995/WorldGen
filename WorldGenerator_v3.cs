@@ -231,12 +231,12 @@ public class WorldGenerator_v3 : MonoBehaviour {
 	}
 }
 
-public class Block {
+public class Block_v3 {
 	public float height;
 	public Object obj;
 	public int BlockID;
 
-	public Block(Object listObject, float inputHeight, int currentID) {
+	public Block_v3(Object listObject, float inputHeight, int currentID) {
 		obj = listObject;
 		height = inputHeight;
 		BlockID = currentID;
