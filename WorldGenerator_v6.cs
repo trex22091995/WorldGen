@@ -112,7 +112,6 @@ public class WorldGenerator_v6 : MonoBehaviour
 				}
 
 
-
 				tempBlock = new Block (Instantiate (prefab, new Vector3 (x, tempHeight, z), new Quaternion (0, 0, 0, Quaternion.identity.w)), tempHeight, currentID);
 				currentID++;
 				World.Add (tempBlock);
@@ -300,4 +299,13 @@ public class Block
 				obj.name = currentID.ToString ();
 
 		}
+}
+
+public class Chunk{
+	List<Block> blocks = new List<Block>();
+	List<int> nord = new List<int> ();
+	List<int> ost = new List<int> ();
+	List<int> west = new List<int> ();
+	List<int> sued = new List<int> ();
+
 }
